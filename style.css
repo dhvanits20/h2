@@ -1,0 +1,81 @@
+/* Skip Link Styles */
+.skip-link {
+    position: absolute;
+    top: -40px; /* Hide off-screen */
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+    transition: top 0.3s; /* Smooth transition */
+}
+
+.skip-link:focus {
+    top: 0; /* Move into view when focused */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex; /* Use flexbox for navigation */
+    justify-content: space-around; /* Space items evenly */
+    background-color: #333; /* Dark background */
+    padding: 10px; /* Padding around nav */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav li {
+    margin: 0 15px; /* Space between items */
+}
+
+nav a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 5px 10px; /* Padding for links */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+nav a:hover {
+    background-color: #555; /* Change background on hover */
+}
+
+/* Image Styles using Box Model */
+img {
+    border: 2px solid #ccc; /* Light gray border */
+    padding: 10px; /* Padding around images */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Responsive images */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between grid items */
+    margin: 20px; /* Margin around grid */
+}
+
+/* Flex Layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Space items evenly */
+    margin: 20px; /* Margin around flex items */
+}
+
+.flex-item {
+    flex: 1 1 30%; /* Flex items with a base width of 30% */
+    margin: 10px; /* Margin around flex items */
+}
+
+/* nth-child Selector for Styling */
+.grid-item:nth-child(odd) img {
+    border-radius: 20px; /* Different border radius for odd items */
+}
+
+/* Hover Effect */
